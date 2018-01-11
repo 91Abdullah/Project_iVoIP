@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="iVoIP_Phone.UIncomingCall"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="186" d:DesignWidth="400">
+    <Grid Height="176" Name="ChildGrid" Width="393" Loaded="ChildGrid_Loaded">
+        <Image Height="81" HorizontalAlignment="Left" Margin="12,12,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="83" Source="/iVoIP_Phone;component/Images/phoneRing.png" />
+        <TextBlock Height="23" Margin="115,12,170,141" Name="textBlock3" Style="{DynamicResource MetroTextBlock}" Text="Number" TextAlignment="Left" />
+        <TextBlock Height="23" Margin="115,41,170,112" Name="textBlock1" Style="{DynamicResource MetroTextBlock}" Text="Ans Delay" TextAlignment="Left" />
+        <TextBlock Height="23" Margin="225,12,12,141" Name="textBlock2" Style="{DynamicResource MetroTextBlock}" Text="-" TextAlignment="Center" />
+        <TextBlock Height="23" Margin="225,41,12,112" Name="textBlock4" Style="{DynamicResource MetroTextBlock}" Text="-" TextAlignment="Center" />
+        <TextBlock Height="23" Margin="115,70,170,83" Name="textBlock5" Style="{DynamicResource MetroTextBlock}" Text="Talk Time" TextAlignment="Left" />
+        <TextBlock Height="23" Margin="115,99,170,54" Name="textBlock6" Style="{DynamicResource MetroTextBlock}" Text="Hold Time" TextAlignment="Left" />
+        <TextBlock Height="23" Margin="225,70,12,83" Name="textBlock7" Style="{DynamicResource MetroTextBlock}" Text="-" TextAlignment="Center" />
+        <TextBlock Height="23" Margin="225,99,12,54" Name="textBlock8" Style="{DynamicResource MetroTextBlock}" Text="-" TextAlignment="Center" />
+        <TextBlock Height="23" Margin="115,128,170,25" Name="textBlock11" Style="{DynamicResource MetroTextBlock}" Text="Handle Time" TextAlignment="Left" />
+        <TextBlock Height="23" Margin="225,128,12,25" Name="textBlock10" Style="{DynamicResource MetroTextBlock}" Text="-" TextAlignment="Center" />
+    </Grid>
+</UserControl>

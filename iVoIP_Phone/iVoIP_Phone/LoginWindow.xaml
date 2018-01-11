@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow x:Class="iVoIP_Phone.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"           
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Welcome to iVoIP Softphone" BorderThickness="1" BorderBrush="{DynamicResource AccentColorBrush}" Height="278" Width="479" Icon="/iVoIP_Phone;component/Images/1407358855_111025.ico" ShowMinButton="True" ShowMaxRestoreButton="False" ResizeMode="CanMinimize">
+    <Grid>
+        <TextBox Height="26" HorizontalAlignment="Left" Margin="283,82,0,0" Name="textBox1" VerticalAlignment="Top" Width="160" />
+        <Label Content="Username" Height="28" HorizontalAlignment="Left" Margin="283,59,0,0" Name="label1" VerticalAlignment="Top" FontSize="12" />
+        <Label Content="Password" Height="28" HorizontalAlignment="Left" Margin="283,114,0,0" Name="label2" VerticalAlignment="Top" FontSize="12" />
+        <Label Content="Sign In" Height="37" HorizontalAlignment="Left" Margin="283,16,0,0" Name="label3" VerticalAlignment="Top" FontFamily="Trebuchet MS" FontSize="20" Width="136" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="283,138,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="160" />
+        <Button Content="Login" Height="23" HorizontalAlignment="Left" Margin="283,178,0,0" Name="button1" VerticalAlignment="Top" Width="75" ToolTip="Login" Click="button1_Click" IsDefault="True" />
+        <Label Height="26" HorizontalAlignment="Left" Margin="263,19,0,0" Name="label4" VerticalAlignment="Top" Content="|" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,40,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,63,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,86,0,0" Name="label7" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,107,0,0" Name="label8" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,130,0,0" Name="label9" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,153,0,0" Name="label10" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,171,0,0" Name="label11" VerticalAlignment="Top" />
+        <Label Content="|" Height="26" HorizontalAlignment="Left" Margin="263,193,0,0" Name="label12" VerticalAlignment="Top" />
+        <Label Content="iVoIP™" FontFamily="Trebuchet MS" FontSize="20" Height="37" HorizontalAlignment="Left" Margin="106,19,0,0" Name="label13" VerticalAlignment="Top" Width="79" />
+        <Label Content="Softphone" FontFamily="Trebuchet MS" FontSize="20" Height="37" HorizontalAlignment="Left" Margin="106,46,0,0" Name="label14" VerticalAlignment="Top" Width="124" FontWeight="SemiBold" Foreground="#FF40AEC0" />
+        <Label Content="Contact Center" FontFamily="Trebuchet MS" FontSize="20" Height="37" HorizontalAlignment="Left" Margin="106,74,0,0" Name="label15" VerticalAlignment="Top" Width="194" FontWeight="SemiBold" Foreground="#FF40AEC0" />
+        <Image Height="97" HorizontalAlignment="Left" Margin="12,29,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="88" Source="/iVoIP_Phone;component/Images/1407357595_phone_telephone_call.png" />
+        <Label Content="Version 2.1" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="106,106,0,0" Name="label16" VerticalAlignment="Top" Width="194" FontStyle="Italic" />
+    </Grid>
+</controls:MetroWindow>

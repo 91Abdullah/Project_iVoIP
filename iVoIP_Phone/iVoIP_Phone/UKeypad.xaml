@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="iVoIP_Phone.UKeypad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:my="clr-namespace:DNBSoft.WPF.RibbonControl;assembly=RibbonControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="202" d:DesignWidth="411">
+    <Grid Height="188" Width="402">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="0" />
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="347*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="181" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="7*" />
+        </Grid.RowDefinitions>
+        <my:RibbonHalfButton HorizontalAlignment="Left" Margin="177,18,0,0" Name="ribbonHalfButton1" VerticalAlignment="Top" Height="35" Width="48" NormalImage="/iVoIP_Phone;component/Images/1.png" Grid.Column="3" Clicked="btnClick" Text="1" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="231,18,0,0" Name="ribbonHalfButton2" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/2.png" Text="2" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="285,18,0,0" Name="ribbonHalfButton3" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/3.png" Text="3" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" Margin="177,59,0,0" Name="ribbonHalfButton4" VerticalAlignment="Top" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/4.png" Text="4" Clicked="btnClick" HorizontalAlignment="Left" Width="48" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="231,59,0,0" Name="ribbonHalfButton5" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/5.png" Text="5" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" Margin="285,59,69,0" Name="ribbonHalfButton6" VerticalAlignment="Top" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/6.png" Text="6" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="177,100,0,0" Name="ribbonHalfButton7" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/7.png" DataContext="{Binding}" Text="7" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="231,100,0,0" Name="ribbonHalfButton8" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/8.png" Text="8" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" Margin="0,100,69,0" Name="ribbonHalfButton9" VerticalAlignment="Top" Grid.Column="3" HorizontalAlignment="Right" Width="48" NormalImage="/iVoIP_Phone;component/Images/9.png" Text="9" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Name="ribbonHalfButton10" VerticalAlignment="Top" Width="48" Margin="177,141,0,0" Grid.Column="3" Text="*" Clicked="btnClick" NormalImage="/iVoIP_Phone;component/Images/asterisk-blue-app-icons-vector-897150%20%281%29.jpg" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="231,141,0,0" Name="ribbonHalfButton11" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/0.png" Text="0" Clicked="btnClick" />
+        <my:RibbonHalfButton Height="35" HorizontalAlignment="Left" Margin="285,141,0,0" Name="ribbonHalfButton12" VerticalAlignment="Top" Width="48" Grid.Column="3" NormalImage="/iVoIP_Phone;component/Images/hashtags-295x3001.jpg" Text="#" Clicked="btnClick" />
+        <ComboBox Controls:TextboxHelper.Watermark="Enter # to Dial" Height="23" HorizontalAlignment="Left" Margin="12,27,0,0" Name="comboBox1" VerticalAlignment="Top" 
+                  Width="145" Style="{DynamicResource MetroComboBox}" IsEditable="True" Grid.Column="3" />
+        <my:RibbonHalfButton Grid.Column="3" HorizontalAlignment="Left" Margin="339,18,0,0" Name="ribbonHalfButton13" VerticalAlignment="Top" Height="158" Width="45" NormalImage="/iVoIP_Phone;component/Images/phone-18-32.png" Clicked="ribbonHalfButton13_Clicked" />
+        <TextBlock Grid.Column="3" Margin="104,71,245,87" Name="textBlock5" Style="{DynamicResource MetroTextBlock}" Text="00:00:00" TextAlignment="Center" />
+        <TextBlock Grid.Column="3" Height="23" Margin="104,100,245,58" Name="textBlock1" Style="{DynamicResource MetroTextBlock}" Text="00:00:00" TextAlignment="Center" />
+        <TextBlock Grid.Column="3" Height="23" Margin="104,129,245,29" Name="textBlock2" Style="{DynamicResource MetroTextBlock}" Text="00:00:00" TextAlignment="Center" />
+        <TextBlock Grid.Column="3" Height="23" Margin="12,71,317,87" Name="textBlock3" Style="{DynamicResource MetroTextBlock}" Text="Handle Time" TextAlignment="Left" />
+        <TextBlock Grid.Column="3" Height="23" Margin="12,100,317,58" Name="textBlock4" Style="{DynamicResource MetroTextBlock}" Text="Talk Time" TextAlignment="Left" />
+        <TextBlock Grid.Column="3" Height="23" Margin="12,129,317,29" Name="textBlock6" Style="{DynamicResource MetroTextBlock}" Text="Hold Time" TextAlignment="Left" />
+    </Grid>
+</UserControl>

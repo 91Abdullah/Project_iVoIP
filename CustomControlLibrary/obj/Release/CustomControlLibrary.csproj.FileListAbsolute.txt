@@ -1,0 +1,20 @@
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\bin\Release\CustomControlLibrary.dll
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\ResolveAssemblyReference.cache
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary_MarkupCompile.cache
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary_MarkupCompile.lref
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\themes\generic.baml
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.g.resources
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.Properties.Resources.resources
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Release\CustomControlLibrary.dll
+C:\Projects\CustomControlLibrary\bin\Release\CustomControlLibrary.dll
+C:\Projects\CustomControlLibrary\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary_MarkupCompile.cache
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary_MarkupCompile.lref
+C:\Projects\CustomControlLibrary\obj\Release\themes\generic.baml
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary.g.resources
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary.Properties.Resources.resources
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary.csproj.GenerateResource.Cache
+C:\Projects\CustomControlLibrary\obj\Release\CustomControlLibrary.dll

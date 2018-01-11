@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F823761-08D9-4B82-885F-8EC14392FFFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iVoIP_Phone</RootNamespace>
+    <AssemblyName>iVoIP_Phone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsterNET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsterNET.1.2.0\lib\net40\AsterNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net40\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="pjsipDll">
+      <HintPath>..\..\..\..\01 - Libraries C#\Sipek\pjsipDll.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="RibbonControl">
+      <HintPath>..\..\..\..\05 - Project IVoiP\digitalclock_demo\RibbonControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SipekSdk">
+      <HintPath>..\..\..\..\01 - Libraries C#\Sipek\SipekSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WaveLibMixer">
+      <HintPath>..\..\iVoIPSoftphone_1.0.1\iVoIPSoftphone_1.0.1\bin\Release\WaveLibMixer.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsApplication">
+      <HintPath>..\..\..\..\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\Applications\WindowsApplication\bin\Debug\WindowsApplication.exe</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFDigitalClock">
+      <HintPath>..\..\..\..\05 - Project IVoiP\digitalclock_demo\WPFDigitalClock.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CAccountConfig.cs" />
+    <Compile Include="CCallDetailRecord.cs" />
+    <Compile Include="CDatabaseClass.cs" />
+    <Compile Include="CPhoneConfig.cs" />
+    <Compile Include="DataClassesiVoIP.cs">
+      <DependentUpon>DataClassesiVoIP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClassesiVoIP.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesiVoIP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PECDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PECDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SipekResources.cs" />
+    <Compile Include="StateMachine.cs" />
+    <Compile Include="UCallButtons.xaml.cs">
+      <DependentUpon>UCallButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCallHistory.xaml.cs">
+      <DependentUpon>UCallHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIncomingCall.xaml.cs">
+      <DependentUpon>UIncomingCall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UKeypad.xaml.cs">
+      <DependentUpon>UKeypad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="USupervisorPanel.xaml.cs">
+      <DependentUpon>USupervisorPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UTable.xaml.cs">
+      <DependentUpon>UTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UTransfer.xaml.cs">
+      <DependentUpon>UTransfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UWorkCodeWindow.xaml.cs">
+      <DependentUpon>UWorkCodeWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CGUITimer.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UCallButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCallHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIncomingCall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UKeypad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="USupervisorPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UTransfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UWorkCodeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="DataClassesiVoIP.dbml.layout">
+      <DependentUpon>DataClassesiVoIP.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataClassesiVoIP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesiVoIP.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PECDataSet.xsc">
+      <DependentUpon>PECDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PECDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PECDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PECDataSet.xss">
+      <DependentUpon>PECDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1407358855_111025.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dial1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chatpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\houseexit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Meeting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\miscellaneous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mosque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\parkcall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\seccade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Supervisor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\phone-18-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\0.png" />
+    <Resource Include="Images\2.png" />
+    <Resource Include="Images\3.png" />
+    <Resource Include="Images\4.png" />
+    <Resource Include="Images\5.png" />
+    <Resource Include="Images\6.png" />
+    <Resource Include="Images\7.png" />
+    <Resource Include="Images\8.png" />
+    <Resource Include="Images\9.png" />
+    <Resource Include="Images\asterisk.png" />
+    <Resource Include="Images\hash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hangup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\response.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\volume24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\finished_work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dialer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\phoneRing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\phone-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1407357595_phone_telephone_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1407358855_111025.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\asterisk-blue-app-icons-vector-897150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\asterisk-blue-app-icons-vector-897150 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hashtags-295x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hashtags-295x3001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CustomControlLibrary\CustomControlLibrary.csproj">
+      <Project>{46791e2a-5b16-48a1-9517-35bf1e9939f1}</Project>
+      <Name>CustomControlLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

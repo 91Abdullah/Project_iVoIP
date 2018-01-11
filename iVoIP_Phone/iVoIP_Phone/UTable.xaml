@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="iVoIP_Phone.UTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="174" d:DesignWidth="397">
+    <Grid Height="176" Name="ChildGrid" Width="393" Background="#FFE8E8E8">
+        <DataGrid AutoGenerateColumns="False" Height="121" HorizontalAlignment="Left" Margin="12,43,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="88" />
+        <DataGrid AutoGenerateColumns="False" Height="121" HorizontalAlignment="Left" Margin="106,43,0,0" Name="dataGrid2" VerticalAlignment="Top" Width="88" />
+        <DataGrid AutoGenerateColumns="False" Height="121" HorizontalAlignment="Left" Margin="200,43,0,0" Name="dataGrid3" VerticalAlignment="Top" Width="88" />
+        <DataGrid AutoGenerateColumns="False" Height="121" HorizontalAlignment="Left" Margin="293,43,0,0" Name="dataGrid4" VerticalAlignment="Top" Width="88" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,43,0,0" Name="textBlock1" Text="Calls" VerticalAlignment="Top" Width="88" TextAlignment="Center"/>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,43,0,0" Name="textBlock2" Text="Service Level" TextAlignment="Center" VerticalAlignment="Top" Width="88" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="200,43,0,0" Name="textBlock3" Text="Averages" TextAlignment="Center" VerticalAlignment="Top" Width="88" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,43,0,0" Name="textBlock4" Text="Activities" TextAlignment="Center" VerticalAlignment="Top" Width="88" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,72,0,0" Name="textBlock5" Text="DIAL" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="66,72,0,0" Name="textBlock6" Text="" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,101,0,0" Name="textBlock7" Text="LNDD" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,130,0,0" Name="textBlock8" Text="ANS" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="66,101,0,0" Name="textBlock9" Text="Calls" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="66,130,0,0" Name="textBlock10" Text="Calls" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,72,0,0" Name="textBlock11" Text="PSL" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="106,101,0,0" Name="textBlock12" Text="GSL" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="160,72,0,0" Name="textBlock13" Text="DIAL" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="160,101,0,0" Name="textBlock14" Text="DIAL" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="200,72,0,0" Name="textBlock15" Text="ASD" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="200,101,0,0" Name="textBlock16" Text="AHT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock HorizontalAlignment="Left" Margin="254,72,0,0" Name="textBlock17" Text="ASD" TextAlignment="Center" Width="34" Height="23" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="254,101,0,0" Name="textBlock18" Text="ASD" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="200,130,0,0" Name="textBlock19" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="254,130,0,0" Name="textBlock20" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,72,0,0" Name="textBlock21" Text="TLD" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock HorizontalAlignment="Left" Margin="347,72,0,0" Name="textBlock22" Text="ATT" TextAlignment="Center" Width="34" Height="23" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,87,0,0" Name="textBlock23" Text="TALK" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="347,87,0,0" Name="textBlock24" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,101,0,0" Name="textBlock25" Text="HOLD" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,116,0,0" Name="textBlock26" Text="NRDY" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="293,130,0,0" Name="textBlock27" Text="RDY" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="347,101,0,0" Name="textBlock28" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="347,116,0,0" Name="textBlock29" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="347,130,0,0" Name="textBlock30" Text="ATT" TextAlignment="Center" VerticalAlignment="Top" Width="34" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,87 @@
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.exe.config
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.exe
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.pdb
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\CustomControlLibrary.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\MahApps.Metro.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\pjsipDll.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\RibbonControl.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\SipekSdk.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\System.Windows.Interactivity.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\WaveLibMixer.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\WindowsApplication.exe
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\WPFDigitalClock.dll
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\MahApps.Metro.xml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\WindowsApplication.pdb
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\ResolveAssemblyReference.cache
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\LoginWindow.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallButtons.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UIncomingCall.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UKeypad.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\USupervisorPanel.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTable.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTransfer.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UWorkCodeWindow.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\App.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\LoginWindow.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\MainWindow.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallButtons.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UIncomingCall.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UKeypad.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\USupervisorPanel.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTable.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTransfer.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UWorkCodeWindow.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\App.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone_MarkupCompile.cache
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone_MarkupCompile.lref
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\MainWindow.baml
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.g.resources
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.Properties.Resources.resources
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\GenerateResource.read.1.tlog
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\GenerateResource.write.1.tlog
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.exe.licenses
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.exe
+D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.exe.config
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.exe
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.exe
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\iVoIP_Phone.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\CustomControlLibrary.dll
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\MahApps.Metro.dll
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\System.Windows.Interactivity.dll
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\MahApps.Metro.xml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.csprojResolveAssemblyReference.cache
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\LoginWindow.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallButtons.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallHistory.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UIncomingCall.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UKeypad.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\USupervisorPanel.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTable.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTransfer.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UWorkCodeWindow.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\App.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\LoginWindow.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\MainWindow.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallButtons.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UCallHistory.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UIncomingCall.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UKeypad.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\USupervisorPanel.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTable.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UTransfer.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\UWorkCodeWindow.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\App.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone_MarkupCompile.cache
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone_MarkupCompile.lref
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\MainWindow.baml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.g.resources
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.Properties.Resources.resources
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.csproj.GenerateResource.Cache
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Release\iVoIP_Phone.exe.licenses
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\AsterNET.dll
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\AsterNET.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Release\AsterNET.xml

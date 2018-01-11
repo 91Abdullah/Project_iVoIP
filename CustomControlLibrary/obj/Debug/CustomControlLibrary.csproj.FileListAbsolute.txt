@@ -1,0 +1,24 @@
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\bin\Debug\CustomControlLibrary.dll
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\bin\Debug\CustomControlLibrary.pdb
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary_MarkupCompile.cache
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary_MarkupCompile.lref
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\themes\generic.baml
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary.g.resources
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary.Properties.Resources.resources
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary.dll
+D:\05 - Project IVoiP\WPFCustomControl_src\Clock Custom Control\ClassLibrary\CustomControlLibrary\obj\Debug\CustomControlLibrary.pdb
+C:\Projects\CustomControlLibrary\bin\Debug\CustomControlLibrary.dll
+C:\Projects\CustomControlLibrary\bin\Debug\CustomControlLibrary.pdb
+C:\Projects\CustomControlLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary_MarkupCompile.cache
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary_MarkupCompile.lref
+C:\Projects\CustomControlLibrary\obj\Debug\themes\generic.baml
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary.g.resources
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary.Properties.Resources.resources
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary.csproj.GenerateResource.Cache
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary.dll
+C:\Projects\CustomControlLibrary\obj\Debug\CustomControlLibrary.pdb
