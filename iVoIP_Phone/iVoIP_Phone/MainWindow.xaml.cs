@@ -249,10 +249,10 @@ namespace iVoIP_Phone
             #region AsterNet Manager Login
 
             string server = dataClass.AccountConfig.AsteriskIP;
-            int port = 5038;
-            string username = "ivoip-admin";
-            string password = "Root12";
-            string queue = "100";
+            int port = dataClass.GetServerData().ManagerPort;
+            string username = dataClass.GetServerData().ManagerUsername;
+            string password = dataClass.GetServerData().ManagerPassword;
+            string queue = dataClass.GetServerData().Queue;
             string iface = dataClass.Extension;
 
             manager = new ManagerConnection(server, port, username, password);

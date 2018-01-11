@@ -22,7 +22,7 @@ namespace iVoIP_Phone
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="IVOIPDB")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PEC")]
 	public partial class DataClassesiVoIPDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,9 +30,6 @@ namespace iVoIP_Phone
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertAsteriskTable(AsteriskTable instance);
-    partial void UpdateAsteriskTable(AsteriskTable instance);
-    partial void DeleteAsteriskTable(AsteriskTable instance);
     partial void InsertLogin(Login instance);
     partial void UpdateLogin(Login instance);
     partial void DeleteLogin(Login instance);
@@ -54,6 +51,9 @@ namespace iVoIP_Phone
     partial void InsertTable(Table instance);
     partial void UpdateTable(Table instance);
     partial void DeleteTable(Table instance);
+    partial void InsertAsteriskTable(AsteriskTable instance);
+    partial void UpdateAsteriskTable(AsteriskTable instance);
+    partial void DeleteAsteriskTable(AsteriskTable instance);
     #endregion
 		
 		public DataClassesiVoIPDataContext() : 
@@ -84,14 +84,6 @@ namespace iVoIP_Phone
 				base(connection, mappingSource)
 		{
 			OnCreated();
-		}
-		
-		public System.Data.Linq.Table<AsteriskTable> AsteriskTables
-		{
-			get
-			{
-				return this.GetTable<AsteriskTable>();
-			}
 		}
 		
 		public System.Data.Linq.Table<Login> Logins
@@ -157,114 +149,12 @@ namespace iVoIP_Phone
 				return this.GetTable<Table>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AsteriskTable")]
-	public partial class AsteriskTable : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID;
-		
-		private string _ProxyIP;
-		
-		private int _Port;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnProxyIPChanging(string value);
-    partial void OnProxyIPChanged();
-    partial void OnPortChanging(int value);
-    partial void OnPortChanged();
-    #endregion
-		
-		public AsteriskTable()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ID
+		public System.Data.Linq.Table<AsteriskTable> AsteriskTables
 		{
 			get
 			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this.OnIDChanging(value);
-					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProxyIP", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string ProxyIP
-		{
-			get
-			{
-				return this._ProxyIP;
-			}
-			set
-			{
-				if ((this._ProxyIP != value))
-				{
-					this.OnProxyIPChanging(value);
-					this.SendPropertyChanging();
-					this._ProxyIP = value;
-					this.SendPropertyChanged("ProxyIP");
-					this.OnProxyIPChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Port", DbType="Int NOT NULL")]
-		public int Port
-		{
-			get
-			{
-				return this._Port;
-			}
-			set
-			{
-				if ((this._Port != value))
-				{
-					this.OnPortChanging(value);
-					this.SendPropertyChanging();
-					this._Port = value;
-					this.SendPropertyChanged("Port");
-					this.OnPortChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<AsteriskTable>();
 			}
 		}
 	}
@@ -2307,6 +2197,212 @@ namespace iVoIP_Phone
 					this._totACWTime = value;
 					this.SendPropertyChanged("totACWTime");
 					this.OntotACWTimeChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AsteriskTable")]
+	public partial class AsteriskTable : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _ProxyIP;
+		
+		private int _Port;
+		
+		private string _ManagerUsername;
+		
+		private string _ManagerPassword;
+		
+		private int _ManagerPort;
+		
+		private string _Queue;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnProxyIPChanging(string value);
+    partial void OnProxyIPChanged();
+    partial void OnPortChanging(int value);
+    partial void OnPortChanged();
+    partial void OnManagerUsernameChanging(string value);
+    partial void OnManagerUsernameChanged();
+    partial void OnManagerPasswordChanging(string value);
+    partial void OnManagerPasswordChanged();
+    partial void OnManagerPortChanging(int value);
+    partial void OnManagerPortChanged();
+    partial void OnQueueChanging(string value);
+    partial void OnQueueChanged();
+    #endregion
+		
+		public AsteriskTable()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProxyIP", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string ProxyIP
+		{
+			get
+			{
+				return this._ProxyIP;
+			}
+			set
+			{
+				if ((this._ProxyIP != value))
+				{
+					this.OnProxyIPChanging(value);
+					this.SendPropertyChanging();
+					this._ProxyIP = value;
+					this.SendPropertyChanged("ProxyIP");
+					this.OnProxyIPChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Port", DbType="Int NOT NULL")]
+		public int Port
+		{
+			get
+			{
+				return this._Port;
+			}
+			set
+			{
+				if ((this._Port != value))
+				{
+					this.OnPortChanging(value);
+					this.SendPropertyChanging();
+					this._Port = value;
+					this.SendPropertyChanged("Port");
+					this.OnPortChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ManagerUsername", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ManagerUsername
+		{
+			get
+			{
+				return this._ManagerUsername;
+			}
+			set
+			{
+				if ((this._ManagerUsername != value))
+				{
+					this.OnManagerUsernameChanging(value);
+					this.SendPropertyChanging();
+					this._ManagerUsername = value;
+					this.SendPropertyChanged("ManagerUsername");
+					this.OnManagerUsernameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ManagerPassword", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ManagerPassword
+		{
+			get
+			{
+				return this._ManagerPassword;
+			}
+			set
+			{
+				if ((this._ManagerPassword != value))
+				{
+					this.OnManagerPasswordChanging(value);
+					this.SendPropertyChanging();
+					this._ManagerPassword = value;
+					this.SendPropertyChanged("ManagerPassword");
+					this.OnManagerPasswordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ManagerPort", DbType="Int NOT NULL")]
+		public int ManagerPort
+		{
+			get
+			{
+				return this._ManagerPort;
+			}
+			set
+			{
+				if ((this._ManagerPort != value))
+				{
+					this.OnManagerPortChanging(value);
+					this.SendPropertyChanging();
+					this._ManagerPort = value;
+					this.SendPropertyChanged("ManagerPort");
+					this.OnManagerPortChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Queue", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string Queue
+		{
+			get
+			{
+				return this._Queue;
+			}
+			set
+			{
+				if ((this._Queue != value))
+				{
+					this.OnQueueChanging(value);
+					this.SendPropertyChanging();
+					this._Queue = value;
+					this.SendPropertyChanged("Queue");
+					this.OnQueueChanged();
 				}
 			}
 		}

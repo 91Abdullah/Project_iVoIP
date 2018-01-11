@@ -1,12 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IVOIPDB" Class="DataClassesiVoIPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PEC" Class="DataClassesiVoIPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=127.0.0.1;Initial Catalog=PEC;User ID=sa" SettingsObjectName="iVoIP_Phone.Properties.Settings" SettingsPropertyName="IVOIPDBConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.AsteriskTable" Member="AsteriskTables">
-    <Type Name="AsteriskTable">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ProxyIP" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Port" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.Logins" Member="Logins">
     <Type Name="Login">
       <Column Name="ID" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -112,6 +105,17 @@
       <Column Name="totHoldTime" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
       <Column Name="totNrdyTime" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
       <Column Name="totACWTime" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AsteriskTable" Member="AsteriskTables">
+    <Type Name="AsteriskTable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProxyIP" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Port" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ManagerUsername" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ManagerPassword" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ManagerPort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Queue" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

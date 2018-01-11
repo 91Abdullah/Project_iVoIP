@@ -16,5 +16,5 @@ C:\Projects\iVoIP_Phone\iVoIP_Phone\App.xaml
 31-1721931743
 LoginWindow.xaml;MainWindow.xaml;UCallButtons.xaml;UCallHistory.xaml;UIncomingCall.xaml;UKeypad.xaml;USupervisorPanel.xaml;UTable.xaml;UTransfer.xaml;UWorkCodeWindow.xaml;
 
-True
+False
 

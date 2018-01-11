@@ -168,7 +168,6 @@ namespace iVoIP_Phone
                     this.accountConfig.ProxyAddress = "";
                     this.accountConfig.UserName     = Extension;
                     this.accountConfig.AsteriskIP   = GetProxyIP();
-                    this.accountConfig.Queue        = "100";
 
                     //Adding Phone Config
                     this.phoneConfig.AAFlag         = GetSettings(Extension).AAFlag;
@@ -195,6 +194,12 @@ namespace iVoIP_Phone
         {
             var q =  dataContext.AsteriskTables.Single();
             return q.ProxyIP.Trim();
+        }
+
+        public AsteriskTable GetServerData()
+        {
+            var q = dataContext.AsteriskTables.Single();
+            return q;
         }
 
         public void LogCall(CCallDetailRecord record)

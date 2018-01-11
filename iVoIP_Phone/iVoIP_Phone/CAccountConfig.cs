@@ -22,7 +22,6 @@ namespace iVoIP_Phone
         public ETransportMode TransportMode { get { return ETransportMode.TM_UDP; } set { } }
         public string UserName { get; set; }
         public string AsteriskIP { get; set; }
-        public string Queue { get; set; }
 
         #endregion
     }
