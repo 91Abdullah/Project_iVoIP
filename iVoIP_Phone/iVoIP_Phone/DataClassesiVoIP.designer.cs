@@ -42,9 +42,6 @@ namespace iVoIP_Phone
     partial void InsertConsolidated(Consolidated instance);
     partial void UpdateConsolidated(Consolidated instance);
     partial void DeleteConsolidated(Consolidated instance);
-    partial void InsertCurrStateInfo(CurrStateInfo instance);
-    partial void UpdateCurrStateInfo(CurrStateInfo instance);
-    partial void DeleteCurrStateInfo(CurrStateInfo instance);
     partial void InsertTable(Table instance);
     partial void UpdateTable(Table instance);
     partial void DeleteTable(Table instance);
@@ -54,10 +51,13 @@ namespace iVoIP_Phone
     partial void InsertLogin(Login instance);
     partial void UpdateLogin(Login instance);
     partial void DeleteLogin(Login instance);
+    partial void InsertCurrStateInfo(CurrStateInfo instance);
+    partial void UpdateCurrStateInfo(CurrStateInfo instance);
+    partial void DeleteCurrStateInfo(CurrStateInfo instance);
     #endregion
 		
 		public DataClassesiVoIPDataContext() : 
-				base(global::iVoIP_Phone.Properties.Settings.Default.IVOIPDBConnectionString1, mappingSource)
+				base(global::iVoIP_Phone.Properties.Settings.Default.PECConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -126,14 +126,6 @@ namespace iVoIP_Phone
 			}
 		}
 		
-		public System.Data.Linq.Table<CurrStateInfo> CurrStateInfos
-		{
-			get
-			{
-				return this.GetTable<CurrStateInfo>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Table> Tables
 		{
 			get
@@ -155,6 +147,14 @@ namespace iVoIP_Phone
 			get
 			{
 				return this.GetTable<Login>();
+			}
+		}
+		
+		public System.Data.Linq.Table<CurrStateInfo> CurrStateInfos
+		{
+			get
+			{
+				return this.GetTable<CurrStateInfo>();
 			}
 		}
 	}
@@ -1316,284 +1316,6 @@ namespace iVoIP_Phone
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CurrStateInfo")]
-	public partial class CurrStateInfo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private double _ID;
-		
-		private string _Name;
-		
-		private string _Extension;
-		
-		private string _LoginTime;
-		
-		private string _LogoutTime;
-		
-		private bool _IsLogin;
-		
-		private bool _IsReady;
-		
-		private bool _OnCall;
-		
-		private bool _Idle;
-		
-		private bool _ACW;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(double value);
-    partial void OnIDChanged();
-    partial void OnNameChanging(string value);
-    partial void OnNameChanged();
-    partial void OnExtensionChanging(string value);
-    partial void OnExtensionChanged();
-    partial void OnLoginTimeChanging(string value);
-    partial void OnLoginTimeChanged();
-    partial void OnLogoutTimeChanging(string value);
-    partial void OnLogoutTimeChanged();
-    partial void OnIsLoginChanging(bool value);
-    partial void OnIsLoginChanged();
-    partial void OnIsReadyChanging(bool value);
-    partial void OnIsReadyChanged();
-    partial void OnOnCallChanging(bool value);
-    partial void OnOnCallChanged();
-    partial void OnIdleChanging(bool value);
-    partial void OnIdleChanged();
-    partial void OnACWChanging(bool value);
-    partial void OnACWChanged();
-    #endregion
-		
-		public CurrStateInfo()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Float NOT NULL", IsPrimaryKey=true)]
-		public double ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this.OnIDChanging(value);
-					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string Name
-		{
-			get
-			{
-				return this._Name;
-			}
-			set
-			{
-				if ((this._Name != value))
-				{
-					this.OnNameChanging(value);
-					this.SendPropertyChanging();
-					this._Name = value;
-					this.SendPropertyChanged("Name");
-					this.OnNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Extension", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string Extension
-		{
-			get
-			{
-				return this._Extension;
-			}
-			set
-			{
-				if ((this._Extension != value))
-				{
-					this.OnExtensionChanging(value);
-					this.SendPropertyChanging();
-					this._Extension = value;
-					this.SendPropertyChanged("Extension");
-					this.OnExtensionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoginTime", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string LoginTime
-		{
-			get
-			{
-				return this._LoginTime;
-			}
-			set
-			{
-				if ((this._LoginTime != value))
-				{
-					this.OnLoginTimeChanging(value);
-					this.SendPropertyChanging();
-					this._LoginTime = value;
-					this.SendPropertyChanged("LoginTime");
-					this.OnLoginTimeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LogoutTime", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string LogoutTime
-		{
-			get
-			{
-				return this._LogoutTime;
-			}
-			set
-			{
-				if ((this._LogoutTime != value))
-				{
-					this.OnLogoutTimeChanging(value);
-					this.SendPropertyChanging();
-					this._LogoutTime = value;
-					this.SendPropertyChanged("LogoutTime");
-					this.OnLogoutTimeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsLogin", DbType="Bit NOT NULL")]
-		public bool IsLogin
-		{
-			get
-			{
-				return this._IsLogin;
-			}
-			set
-			{
-				if ((this._IsLogin != value))
-				{
-					this.OnIsLoginChanging(value);
-					this.SendPropertyChanging();
-					this._IsLogin = value;
-					this.SendPropertyChanged("IsLogin");
-					this.OnIsLoginChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsReady", DbType="Bit NOT NULL")]
-		public bool IsReady
-		{
-			get
-			{
-				return this._IsReady;
-			}
-			set
-			{
-				if ((this._IsReady != value))
-				{
-					this.OnIsReadyChanging(value);
-					this.SendPropertyChanging();
-					this._IsReady = value;
-					this.SendPropertyChanged("IsReady");
-					this.OnIsReadyChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OnCall", DbType="Bit NOT NULL")]
-		public bool OnCall
-		{
-			get
-			{
-				return this._OnCall;
-			}
-			set
-			{
-				if ((this._OnCall != value))
-				{
-					this.OnOnCallChanging(value);
-					this.SendPropertyChanging();
-					this._OnCall = value;
-					this.SendPropertyChanged("OnCall");
-					this.OnOnCallChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Idle", DbType="Bit NOT NULL")]
-		public bool Idle
-		{
-			get
-			{
-				return this._Idle;
-			}
-			set
-			{
-				if ((this._Idle != value))
-				{
-					this.OnIdleChanging(value);
-					this.SendPropertyChanging();
-					this._Idle = value;
-					this.SendPropertyChanged("Idle");
-					this.OnIdleChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACW", DbType="Bit NOT NULL")]
-		public bool ACW
-		{
-			get
-			{
-				return this._ACW;
-			}
-			set
-			{
-				if ((this._ACW != value))
-				{
-					this.OnACWChanging(value);
-					this.SendPropertyChanging();
-					this._ACW = value;
-					this.SendPropertyChanged("ACW");
-					this.OnACWChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[Table]")]
 	public partial class Table : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -2403,6 +2125,284 @@ namespace iVoIP_Phone
 					this._SystemRights = value;
 					this.SendPropertyChanged("SystemRights");
 					this.OnSystemRightsChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CurrStateInfo")]
+	public partial class CurrStateInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _Name;
+		
+		private string _Extension;
+		
+		private string _LoginTime;
+		
+		private string _LogoutTime;
+		
+		private bool _IsLogin;
+		
+		private bool _IsReady;
+		
+		private bool _OnCall;
+		
+		private bool _Idle;
+		
+		private bool _ACW;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnExtensionChanging(string value);
+    partial void OnExtensionChanged();
+    partial void OnLoginTimeChanging(string value);
+    partial void OnLoginTimeChanged();
+    partial void OnLogoutTimeChanging(string value);
+    partial void OnLogoutTimeChanged();
+    partial void OnIsLoginChanging(bool value);
+    partial void OnIsLoginChanged();
+    partial void OnIsReadyChanging(bool value);
+    partial void OnIsReadyChanged();
+    partial void OnOnCallChanging(bool value);
+    partial void OnOnCallChanged();
+    partial void OnIdleChanging(bool value);
+    partial void OnIdleChanged();
+    partial void OnACWChanging(bool value);
+    partial void OnACWChanged();
+    #endregion
+		
+		public CurrStateInfo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Extension", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string Extension
+		{
+			get
+			{
+				return this._Extension;
+			}
+			set
+			{
+				if ((this._Extension != value))
+				{
+					this.OnExtensionChanging(value);
+					this.SendPropertyChanging();
+					this._Extension = value;
+					this.SendPropertyChanged("Extension");
+					this.OnExtensionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoginTime", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
+		public string LoginTime
+		{
+			get
+			{
+				return this._LoginTime;
+			}
+			set
+			{
+				if ((this._LoginTime != value))
+				{
+					this.OnLoginTimeChanging(value);
+					this.SendPropertyChanging();
+					this._LoginTime = value;
+					this.SendPropertyChanged("LoginTime");
+					this.OnLoginTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LogoutTime", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
+		public string LogoutTime
+		{
+			get
+			{
+				return this._LogoutTime;
+			}
+			set
+			{
+				if ((this._LogoutTime != value))
+				{
+					this.OnLogoutTimeChanging(value);
+					this.SendPropertyChanging();
+					this._LogoutTime = value;
+					this.SendPropertyChanged("LogoutTime");
+					this.OnLogoutTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsLogin", DbType="Bit NOT NULL")]
+		public bool IsLogin
+		{
+			get
+			{
+				return this._IsLogin;
+			}
+			set
+			{
+				if ((this._IsLogin != value))
+				{
+					this.OnIsLoginChanging(value);
+					this.SendPropertyChanging();
+					this._IsLogin = value;
+					this.SendPropertyChanged("IsLogin");
+					this.OnIsLoginChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsReady", DbType="Bit NOT NULL")]
+		public bool IsReady
+		{
+			get
+			{
+				return this._IsReady;
+			}
+			set
+			{
+				if ((this._IsReady != value))
+				{
+					this.OnIsReadyChanging(value);
+					this.SendPropertyChanging();
+					this._IsReady = value;
+					this.SendPropertyChanged("IsReady");
+					this.OnIsReadyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OnCall", DbType="Bit NOT NULL")]
+		public bool OnCall
+		{
+			get
+			{
+				return this._OnCall;
+			}
+			set
+			{
+				if ((this._OnCall != value))
+				{
+					this.OnOnCallChanging(value);
+					this.SendPropertyChanging();
+					this._OnCall = value;
+					this.SendPropertyChanged("OnCall");
+					this.OnOnCallChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Idle", DbType="Bit NOT NULL")]
+		public bool Idle
+		{
+			get
+			{
+				return this._Idle;
+			}
+			set
+			{
+				if ((this._Idle != value))
+				{
+					this.OnIdleChanging(value);
+					this.SendPropertyChanging();
+					this._Idle = value;
+					this.SendPropertyChanged("Idle");
+					this.OnIdleChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACW", DbType="Bit NOT NULL")]
+		public bool ACW
+		{
+			get
+			{
+				return this._ACW;
+			}
+			set
+			{
+				if ((this._ACW != value))
+				{
+					this.OnACWChanging(value);
+					this.SendPropertyChanging();
+					this._ACW = value;
+					this.SendPropertyChanged("ACW");
+					this.OnACWChanged();
 				}
 			}
 		}

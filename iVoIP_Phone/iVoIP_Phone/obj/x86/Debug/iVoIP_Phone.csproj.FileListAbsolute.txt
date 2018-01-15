@@ -46,9 +46,6 @@ D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UTransf
 D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\WaveLibMixer.dll
 D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UCallHistory.baml
 D:\02 - Unit-Testing\01 - Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UCallHistory.g.cs
-C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.exe.config
-C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.exe
-C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.pdb
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.csprojResolveAssemblyReference.cache
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\LoginWindow.baml
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UCallButtons.baml
@@ -61,6 +58,7 @@ C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UTransfer.baml
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UWorkCodeWindow.baml
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\App.baml
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\LoginWindow.g.cs
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\MainWindow.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UCallButtons.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UCallHistory.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UIncomingCall.g.cs
@@ -72,20 +70,26 @@ C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\UWorkCodeWindow.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\App.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone_MarkupCompile.cache
-C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\MainWindow.g.cs
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone_MarkupCompile.lref
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\MainWindow.baml
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.g.resources
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.Properties.Resources.resources
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.csproj.GenerateResource.Cache
 C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.exe.licenses
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.exe
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.exe.config
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.exe.manifest
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.application
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.exe
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\iVoIP_Phone.pdb
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\AsterNET.dll
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\CustomControlLibrary.dll
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\MahApps.Metro.dll
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\System.Windows.Interactivity.dll
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\CustomControlLibrary.pdb
-C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\MahApps.Metro.xml
-C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\AsterNET.dll
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\AsterNET.pdb
 C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\AsterNET.xml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\bin\Debug\MahApps.Metro.xml
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.exe.manifest
+C:\Projects\iVoIP_Phone\iVoIP_Phone\obj\x86\Debug\iVoIP_Phone.application

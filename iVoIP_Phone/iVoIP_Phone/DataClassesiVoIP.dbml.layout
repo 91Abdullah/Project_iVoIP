@@ -32,12 +32,6 @@
         <elementListCompartment Id="eb9d0328-6274-4ad1-85ed-27c5ceb754ce" absoluteBounds="0.51499999999999968, 2.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="d26dabb8-50ea-4e3c-ae9e-26f64f8d9b16" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
-      <DataClassMoniker Name="/DataClassesiVoIPDataContext/CurrStateInfo" />
-      <nestedChildShapes>
-        <elementListCompartment Id="9243542f-378f-491f-85fa-ac39bac1f8c6" absoluteBounds="0.51499999999999968, 2.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="e8230069-ab7c-461e-b00f-46d441931ccf" isExpanded="false" absoluteBounds="2.625, 1.75, 2, 0.45">
       <DataClassMoniker Name="/DataClassesiVoIPDataContext/Table" />
       <nestedChildShapes>
@@ -54,6 +48,12 @@
       <DataClassMoniker Name="/DataClassesiVoIPDataContext/Login" />
       <nestedChildShapes>
         <elementListCompartment Id="838221b3-30f7-4c8c-9bee-2c7d95b61410" absoluteBounds="0.51499999999999968, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46c63db3-53e1-4894-9df3-f75c183a52ba" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesiVoIPDataContext/CurrStateInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e309ff9e-f30e-4dfb-a311-1374ddacbffd" absoluteBounds="0.51499999999999968, 2.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

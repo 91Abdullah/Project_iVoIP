@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iVoIP_Phone", "iVoIP_Phone\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlLibrary", "..\CustomControlLibrary\CustomControlLibrary.csproj", "{46791E2A-5B16-48A1-9517-35BF1E9939F1}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{838AB0B2-5884-4006-BC4D-938C02F5CAB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,16 +51,14 @@ Global
 		{46791E2A-5B16-48A1-9517-35BF1E9939F1}.Release|x64.Build.0 = Release|Any CPU
 		{46791E2A-5B16-48A1-9517-35BF1E9939F1}.Release|x86.ActiveCfg = Release|Any CPU
 		{46791E2A-5B16-48A1-9517-35BF1E9939F1}.Release|x86.Build.0 = Release|Any CPU
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Debug|Any CPU.ActiveCfg = Debug
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Debug|x64.ActiveCfg = Debug
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Debug|x64.Build.0 = Debug
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Debug|x86.ActiveCfg = Debug
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Release|Any CPU.ActiveCfg = Release
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Release|Mixed Platforms.ActiveCfg = Release
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Release|x64.ActiveCfg = Release
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Release|x64.Build.0 = Release
-		{B0BF548A-7AE4-4D08-80DA-5F6E12BF60A3}.Release|x86.ActiveCfg = Release
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Debug|Any CPU.ActiveCfg = Debug
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Debug|x64.ActiveCfg = Debug
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Debug|x86.ActiveCfg = Debug
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Release|Any CPU.ActiveCfg = Release
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Release|Mixed Platforms.ActiveCfg = Release
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Release|x64.ActiveCfg = Release
+		{838AB0B2-5884-4006-BC4D-938C02F5CAB1}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
