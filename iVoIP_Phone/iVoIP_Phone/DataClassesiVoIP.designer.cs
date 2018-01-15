@@ -30,9 +30,6 @@ namespace iVoIP_Phone
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertLogin(Login instance);
-    partial void UpdateLogin(Login instance);
-    partial void DeleteLogin(Login instance);
     partial void InsertSetting(Setting instance);
     partial void UpdateSetting(Setting instance);
     partial void DeleteSetting(Setting instance);
@@ -54,6 +51,9 @@ namespace iVoIP_Phone
     partial void InsertAsteriskTable(AsteriskTable instance);
     partial void UpdateAsteriskTable(AsteriskTable instance);
     partial void DeleteAsteriskTable(AsteriskTable instance);
+    partial void InsertLogin(Login instance);
+    partial void UpdateLogin(Login instance);
+    partial void DeleteLogin(Login instance);
     #endregion
 		
 		public DataClassesiVoIPDataContext() : 
@@ -84,14 +84,6 @@ namespace iVoIP_Phone
 				base(connection, mappingSource)
 		{
 			OnCreated();
-		}
-		
-		public System.Data.Linq.Table<Login> Logins
-		{
-			get
-			{
-				return this.GetTable<Login>();
-			}
 		}
 		
 		public System.Data.Linq.Table<Setting> Settings
@@ -157,186 +149,12 @@ namespace iVoIP_Phone
 				return this.GetTable<AsteriskTable>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Logins")]
-	public partial class Login : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private double _ID;
-		
-		private string _Name;
-		
-		private string _Extension;
-		
-		private string _Secret;
-		
-		private string _SystemType;
-		
-		private char _SystemRights;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(double value);
-    partial void OnIDChanged();
-    partial void OnNameChanging(string value);
-    partial void OnNameChanged();
-    partial void OnExtensionChanging(string value);
-    partial void OnExtensionChanged();
-    partial void OnSecretChanging(string value);
-    partial void OnSecretChanged();
-    partial void OnSystemTypeChanging(string value);
-    partial void OnSystemTypeChanged();
-    partial void OnSystemRightsChanging(char value);
-    partial void OnSystemRightsChanged();
-    #endregion
-		
-		public Login()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Float NOT NULL", IsPrimaryKey=true)]
-		public double ID
+		public System.Data.Linq.Table<Login> Logins
 		{
 			get
 			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this.OnIDChanging(value);
-					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string Name
-		{
-			get
-			{
-				return this._Name;
-			}
-			set
-			{
-				if ((this._Name != value))
-				{
-					this.OnNameChanging(value);
-					this.SendPropertyChanging();
-					this._Name = value;
-					this.SendPropertyChanged("Name");
-					this.OnNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Extension", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string Extension
-		{
-			get
-			{
-				return this._Extension;
-			}
-			set
-			{
-				if ((this._Extension != value))
-				{
-					this.OnExtensionChanging(value);
-					this.SendPropertyChanging();
-					this._Extension = value;
-					this.SendPropertyChanged("Extension");
-					this.OnExtensionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Secret", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string Secret
-		{
-			get
-			{
-				return this._Secret;
-			}
-			set
-			{
-				if ((this._Secret != value))
-				{
-					this.OnSecretChanging(value);
-					this.SendPropertyChanging();
-					this._Secret = value;
-					this.SendPropertyChanged("Secret");
-					this.OnSecretChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SystemType", DbType="Char(2) NOT NULL", CanBeNull=false)]
-		public string SystemType
-		{
-			get
-			{
-				return this._SystemType;
-			}
-			set
-			{
-				if ((this._SystemType != value))
-				{
-					this.OnSystemTypeChanging(value);
-					this.SendPropertyChanging();
-					this._SystemType = value;
-					this.SendPropertyChanged("SystemType");
-					this.OnSystemTypeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SystemRights", DbType="Char(1) NOT NULL")]
-		public char SystemRights
-		{
-			get
-			{
-				return this._SystemRights;
-			}
-			set
-			{
-				if ((this._SystemRights != value))
-				{
-					this.OnSystemRightsChanging(value);
-					this.SendPropertyChanging();
-					this._SystemRights = value;
-					this.SendPropertyChanged("SystemRights");
-					this.OnSystemRightsChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<Login>();
 			}
 		}
 	}
@@ -2403,6 +2221,188 @@ namespace iVoIP_Phone
 					this._Queue = value;
 					this.SendPropertyChanged("Queue");
 					this.OnQueueChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Logins")]
+	public partial class Login : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _Name;
+		
+		private string _Extension;
+		
+		private string _Secret;
+		
+		private string _SystemType;
+		
+		private char _SystemRights;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnExtensionChanging(string value);
+    partial void OnExtensionChanged();
+    partial void OnSecretChanging(string value);
+    partial void OnSecretChanged();
+    partial void OnSystemTypeChanging(string value);
+    partial void OnSystemTypeChanged();
+    partial void OnSystemRightsChanging(char value);
+    partial void OnSystemRightsChanged();
+    #endregion
+		
+		public Login()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Extension", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string Extension
+		{
+			get
+			{
+				return this._Extension;
+			}
+			set
+			{
+				if ((this._Extension != value))
+				{
+					this.OnExtensionChanging(value);
+					this.SendPropertyChanging();
+					this._Extension = value;
+					this.SendPropertyChanged("Extension");
+					this.OnExtensionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Secret", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string Secret
+		{
+			get
+			{
+				return this._Secret;
+			}
+			set
+			{
+				if ((this._Secret != value))
+				{
+					this.OnSecretChanging(value);
+					this.SendPropertyChanging();
+					this._Secret = value;
+					this.SendPropertyChanged("Secret");
+					this.OnSecretChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SystemType", DbType="NChar(2) NOT NULL", CanBeNull=false)]
+		public string SystemType
+		{
+			get
+			{
+				return this._SystemType;
+			}
+			set
+			{
+				if ((this._SystemType != value))
+				{
+					this.OnSystemTypeChanging(value);
+					this.SendPropertyChanging();
+					this._SystemType = value;
+					this.SendPropertyChanged("SystemType");
+					this.OnSystemTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SystemRights", DbType="NChar(1) NOT NULL")]
+		public char SystemRights
+		{
+			get
+			{
+				return this._SystemRights;
+			}
+			set
+			{
+				if ((this._SystemRights != value))
+				{
+					this.OnSystemRightsChanging(value);
+					this.SendPropertyChanging();
+					this._SystemRights = value;
+					this.SendPropertyChanged("SystemRights");
+					this.OnSystemRightsChanged();
 				}
 			}
 		}

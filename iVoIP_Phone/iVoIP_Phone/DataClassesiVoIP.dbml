@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PEC" Class="DataClassesiVoIPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=127.0.0.1;Initial Catalog=PEC;User ID=sa" SettingsObjectName="iVoIP_Phone.Properties.Settings" SettingsPropertyName="IVOIPDBConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Logins" Member="Logins">
-    <Type Name="Login">
-      <Column Name="ID" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Extension" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Secret" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="SystemType" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
-      <Column Name="SystemRights" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.Settings" Member="Settings">
     <Type Name="Setting">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -116,6 +106,16 @@
       <Column Name="ManagerPassword" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="ManagerPort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Queue" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Logins" Member="Logins">
+    <Type Name="Login">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Extension" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Secret" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SystemType" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="SystemRights" Type="System.Char" DbType="NChar(1) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

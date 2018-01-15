@@ -1334,7 +1334,7 @@ namespace iVoIP_Phone
         {
             try
             {
-                manager.SendAction(new QueueRemoveAction(dataClass.AccountConfig.AsteriskIP, "SIP/" +
+                manager.SendAction(new QueueRemoveAction(dataClass.GetServerData().Queue, "SIP/" +
                 dataClass.Extension));
             }
             catch (Exception ex)

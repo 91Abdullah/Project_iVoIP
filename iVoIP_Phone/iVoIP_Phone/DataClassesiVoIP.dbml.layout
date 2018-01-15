@@ -2,12 +2,6 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesiVoIP">
   <DataContextMoniker Name="/DataClassesiVoIPDataContext" />
   <nestedChildShapes>
-    <classShape Id="f72cf7e2-337e-46f5-8f44-49d7d27cedcf" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
-      <DataClassMoniker Name="/DataClassesiVoIPDataContext/Login" />
-      <nestedChildShapes>
-        <elementListCompartment Id="d0e08761-9a8f-4670-85ca-cc4f4f856810" absoluteBounds="0.51500000000000012, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="06046330-cb84-4afc-ba13-d2238da9edea" isExpanded="false" absoluteBounds="2.625, 0.5, 2, 0.45">
       <DataClassMoniker Name="/DataClassesiVoIPDataContext/Setting" />
       <nestedChildShapes>
@@ -54,6 +48,12 @@
       <DataClassMoniker Name="/DataClassesiVoIPDataContext/AsteriskTable" />
       <nestedChildShapes>
         <elementListCompartment Id="02289d02-b416-4755-97c0-961abdc2a62f" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d8b9c2b-0487-4e8a-ab67-deba7b570f7e" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataClassesiVoIPDataContext/Login" />
+      <nestedChildShapes>
+        <elementListCompartment Id="838221b3-30f7-4c8c-9bee-2c7d95b61410" absoluteBounds="0.51499999999999968, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
