@@ -26,17 +26,7 @@ namespace iVoIP_Phone.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.8.209;Initial Catalog=PEC;User ID=sa;Password=Root12")]
-        public string IVOIPDBConnectionString1 {
-            get {
-                return ((string)(this["IVOIPDBConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=127.0.0.1;Initial Catalog=PEC;User ID=sa;Password=Root12")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.8.210;Initial Catalog=PEC;User ID=sa;Password=Root12")]
         public string PECConnectionString {
             get {
                 return ((string)(this["PECConnectionString"]));

@@ -56,13 +56,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CustomControlLibrary.dll" size="9728">
-      <assemblyIdentity name="CustomControlLibrary" version="1.0.6589.24264" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CustomControlLibrary" version="1.0.6591.20947" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>K1PtamQNOR8njKlJB9l5tId/elU=</dsig:DigestValue>
+        <dsig:DigestValue>qewZmPCoRzAbmb68liW0VeHkD8w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Qy/sEKlOUP+oY5dy8iUVF+qOKY0=</dsig:DigestValue>
+        <dsig:DigestValue>5bvRcw00wQApAKXtnyCZwuOwTOo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -183,13 +183,13 @@
       <dsig:DigestValue>xRlIJFuv8Yg9+e2AwJBlFQFVQVo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="iVoIP_Phone.exe.config" size="663">
+  <file name="iVoIP_Phone.exe.config" size="451">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4HpJ4CIvTjMHIEqcO5QwEh/OyDY=</dsig:DigestValue>
+      <dsig:DigestValue>dv8+xjD/607JU0jnKW+3aioqOkY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
